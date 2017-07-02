@@ -1,0 +1,11 @@
+FROM nvidia/cuda:8.0-cudnn6-devel
+
+RUN apt-get update -y && \
+    apt-get install -y --no-install-recommends \
+    python-dev \
+    python-pip && \
+    rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+
+RUN pip install -U pip
+RUN pip install setuptools
+RUN pip install cupy==1.0.0.1 chainer==2.0.0
