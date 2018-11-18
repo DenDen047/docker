@@ -1,1 +1,3 @@
 FROM ruby
+
+WORKDIR /root
