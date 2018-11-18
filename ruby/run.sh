@@ -7,4 +7,4 @@ docker run -it --rm \
     -v ${DIR}:/root \
     -w /root \
     denden047/ruby \
-    ruby FILE
+    ruby ${FILE}
